@@ -16,8 +16,7 @@ public class Usuario {
         this.librosPrestados = new ArrayList<>();
     }
 
-    // Pide prestado un libro. Falla si el libro no está disponible
-    // o si el usuario ya tiene 3 libros prestados.
+    
     public boolean solicitarPrestamo(Libro libro) {
         if (librosPrestados.size() >= MAX_LIBROS_PRESTADOS) {
             return false;
